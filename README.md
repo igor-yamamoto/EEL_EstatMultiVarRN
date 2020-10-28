@@ -1,0 +1,2 @@
+# Redes Neurais - R
+Este repositório contém os notebooks apresentados no trabalho sobre Redes Neurais, da disciplina de Estatística Multivariável. Os notebooks são escritos em R, e rodam em cima de Jupyter. 
