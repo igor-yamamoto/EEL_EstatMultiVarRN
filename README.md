@@ -11,4 +11,12 @@ library("remotes")
 remotes::install_github("rstudio/renv")
 ```
 
-Após instalar este pacote, um ambiente virtual pode ser inicializado através através do comando `renv::init()`, e as dependências instaladas com `renv::restore()`.
+Após instalar este pacote, um ambiente virtual pode ser inicializado através através do comando `renv::init()`, e as dependências instaladas com `renv::restore()`. Uma introdução básica aos conceitos do pacote podem ser encontrados [neste endereço](https://rstudio.github.io/renv/articles/renv.html).
+
+Os notebooks rodam em cima do Jupyter Notebook, e por padrão não é suportado notebooks escritos em R. Assim, se faz necessário realizar a configuração de um kernel que interprete a linguagem R. Isso é possível com o kernel `IRkernel`, e a sua configuração básica é feita com:
+``` r
+install.packages("IRkernel")
+library("IRkernel")
+IRkernel::installspec(user = FALSE)
+``` 
+Caso ocorram complicações no momento da configuração do kernel, [este artigo](https://dzone.com/articles/using-r-on-jupyternbspnotebook) possui algumas instruções mais detalhadas e que podem ser úteis. 
